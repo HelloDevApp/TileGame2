@@ -14,6 +14,7 @@
 		A1170218256AAB38002DFB85 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1170217256AAB38002DFB85 /* GameViewController.swift */; };
 		A117021B256AAB38002DFB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1170219256AAB38002DFB85 /* Main.storyboard */; };
 		A117021D256AAB39002DFB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A117021C256AAB39002DFB85 /* Assets.xcassets */; };
+		A1170226256AAD94002DFB85 /* FloorTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1170225256AAD94002DFB85 /* FloorTileSet.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A117021A256AAB38002DFB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A117021C256AAB39002DFB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A117021E256AAB39002DFB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1170225256AAD94002DFB85 /* FloorTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FloorTileSet.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A1170211256AAB38002DFB85 /* GameScene.sks */,
 				A1170213256AAB38002DFB85 /* Actions.sks */,
 				A1170215256AAB38002DFB85 /* GameScene.swift */,
+				A1170225256AAD94002DFB85 /* FloorTileSet.sks */,
 				A1170217256AAB38002DFB85 /* GameViewController.swift */,
 				A1170219256AAB38002DFB85 /* Main.storyboard */,
 				A117021C256AAB39002DFB85 /* Assets.xcassets */,
@@ -129,6 +132,7 @@
 			files = (
 				A117021B256AAB38002DFB85 /* Main.storyboard in Resources */,
 				A1170212256AAB38002DFB85 /* GameScene.sks in Resources */,
+				A1170226256AAD94002DFB85 /* FloorTileSet.sks in Resources */,
 				A117021D256AAB39002DFB85 /* Assets.xcassets in Resources */,
 				A1170214256AAB38002DFB85 /* Actions.sks in Resources */,
 			);
