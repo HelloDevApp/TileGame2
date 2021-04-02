@@ -12,6 +12,25 @@ class GameScene: SKScene {
     
     private var tileSet: SKTileSet?
     
+    
+    var upButton: SKSpriteNode!
+    var downButton: SKSpriteNode!
+    var leftButton: SKSpriteNode!
+    var rightButton: SKSpriteNode!
+    
+    var walkRightAnimPlayer: SKAction!
+    var walkLeftAnimPlayer: SKAction!
+    var walkOfFaceAnimPlayer: SKAction!
+    var walkBackAnimPlayer: SKAction!
+    
+    var touchedNode: SKNode?
+    
+    var buttonIsTapped = false
+    var upButtonIsTapped = false
+    var downButtonIsTapped = false
+    var leftButtonIsTapped = false
+    var rightButtonIsTapped = false
+    
     // map 0
     private var tileMapGrassLevel_0: SKTileMapNode?
     // map 1
