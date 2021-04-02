@@ -186,14 +186,18 @@ class GameScene: SKScene {
 
 
 
-// ----------------------
-// ADD SPRITE Color to colored tile clicked
-// ----------------------
 
-//            zoomGesture.cancelsTouchesInView = false
-//            let group = map.tileGroup(atColumn: column, row: row)
-//            let centerOfTile = tileMapGrassLevel_0?.centerOfTile(atColumn: column, row: row)
-//            shape = SKSpriteNode(color: .black, size: CGSize(width: tileMapGrassLevel_0!.tileSize.height * tileMapGrassLevel_0!.yScale, height: tileMapGrassLevel_0!.tileSize.height * tileMapGrassLevel_0!.xScale))
-//            shape?.position = centerOfTile!
-//            shape?.alpha = 0.3
-//            addChild(shape!)
+
+//        setupSpriteButton(buttonSprite: &upButton, toAngle: (CGFloat.pi / 2))
+//        setupSpriteButton(buttonSprite: &downButton, toAngle: -(CGFloat.pi / 2))
+//        setupSpriteButton(buttonSprite: &leftButton, toAngle: CGFloat.pi)
+//        setupSpriteButton(buttonSprite: &rightButton, toAngle: 0)
+
+
+//    func setupSpriteButton(buttonSprite: inout SKSpriteNode?, toAngle: CGFloat) {
+//        buttonSprite = SKSpriteNode(imageNamed: "arrow-576725")
+//        buttonSprite?.size = CGSize(width: 50, height: 50)
+//        buttonSprite?.run(.rotate(toAngle: toAngle, duration: 0, shortestUnitArc: true))
+//    }
+
+
