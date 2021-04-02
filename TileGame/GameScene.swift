@@ -112,54 +112,18 @@ class GameScene: SKScene {
         tileMapGrassLevel_0?.setTileGroup(objectGroup, andTileDefinition: woodFlowerTile, forColumn: 3, row: 3)
     }
     
-    
-    @objc func zoom(_ sender: UIPinchGestureRecognizer) {
+    func createAnimTexturesFormSpriteSheet(row: Int, rangeTiles: ClosedRange<Int>) -> SKAction  {
+        var texturesAnimationPlayer = [SKTexture]()
         
-        if previousPinchValue == nil {
-            previousPinchValue = sender.scale
+
+        for i in rangeTiles {
+            texturesAnimationPlayer.append(sheet.textureForColumn(column: i, row: row)!)
         }
         
-        if previousPinchValue < sender.scale { // BACK ZOOM
-            camera?.xScale -= 0.05
-            camera?.yScale -= 0.05
-            previousPinchValue = sender.scale
-            
-        } else if previousPinchValue > sender.scale { // ZOOM
-            camera?.xScale += 0.05
-            camera?.yScale += 0.05
-            previousPinchValue = sender.scale
-        }
-        
-    }
-    
-    @objc func handleTapFrom(recognizer: UITapGestureRecognizer) {
-        
-        if recognizer.name == "tapped" {
-            if recognizer.state != .ended {
-                return
-            }
-            
-            print("ok")
-            let recognizorLocation = recognizer.location(in: recognizer.view!)
-            let location = self.convertPoint(fromView: recognizorLocation)
-            
-            guard let map = tileMapGrassLevel_0 else {
-                fatalError("Background node not loaded")
-            }
-            let column = map.tileColumnIndex(fromPosition: location)
-            let row = map.tileRowIndex(fromPosition: location)
-            let tile = map.tileDefinition(atColumn: column, row: row)
-            
-            let grassTile = tilesGroup.first(where: {$0.name == "GrassGroup"})
-            
-            if tile != nil {
-                let emptyTile = SKTileGroup.empty()
-                map.setTileGroup(emptyTile, forColumn: column, row: row)
-            } else {
-                
-                map.setTileGroup(grassTile, forColumn: column, row: row)
-            }
-        } else { return }
+        return SKAction.animate(with: texturesAnimationPlayer,
+                             timePerFrame: 0.1,
+                             resize: false,
+                             restore: true)
     }
     
     // Setup methods
