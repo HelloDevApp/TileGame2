@@ -201,3 +201,9 @@ class GameScene: SKScene {
 //    }
 
 
+
+
+//        upButton.position = CGPoint(x: -200, y: -40)
+//        downButton.position = CGPoint(x: -200, y: -160)
+//        leftButton.position = CGPoint(x: -260, y: -100)
+//        rightButton.position = CGPoint(x: -140, y: -100)
