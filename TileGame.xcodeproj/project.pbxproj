@@ -15,6 +15,7 @@
 		A117021B256AAB38002DFB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1170219256AAB38002DFB85 /* Main.storyboard */; };
 		A117021D256AAB39002DFB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A117021C256AAB39002DFB85 /* Assets.xcassets */; };
 		A1170226256AAD94002DFB85 /* FloorTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1170225256AAD94002DFB85 /* FloorTileSet.sks */; };
+		A15BF9FE261D22F100C3CE0A /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF9FD261D22F100C3CE0A /* SpriteSheet.swift */; };
 		A19FF15D261CBD050020822C /* uni.png in Resources */ = {isa = PBXBuildFile; fileRef = A19FF15B261CBD050020822C /* uni.png */; };
 		A19FF15E261CBD050020822C /* spa.png in Resources */ = {isa = PBXBuildFile; fileRef = A19FF15C261CBD050020822C /* spa.png */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		A117021C256AAB39002DFB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A117021E256AAB39002DFB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1170225256AAD94002DFB85 /* FloorTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FloorTileSet.sks; sourceTree = "<group>"; };
+		A15BF9FD261D22F100C3CE0A /* SpriteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
 		A19FF15B261CBD050020822C /* uni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uni.png; sourceTree = "<group>"; };
 		A19FF15C261CBD050020822C /* spa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spa.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				A1170211256AAB38002DFB85 /* GameScene.sks */,
 				A1170213256AAB38002DFB85 /* Actions.sks */,
 				A1170215256AAB38002DFB85 /* GameScene.swift */,
+				A15BF9FD261D22F100C3CE0A /* SpriteSheet.swift */,
 				A1170225256AAD94002DFB85 /* FloorTileSet.sks */,
 				A1170217256AAB38002DFB85 /* GameViewController.swift */,
 				A1170219256AAB38002DFB85 /* Main.storyboard */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15BF9FE261D22F100C3CE0A /* SpriteSheet.swift in Sources */,
 				A1170216256AAB38002DFB85 /* GameScene.swift in Sources */,
 				A1170218256AAB38002DFB85 /* GameViewController.swift in Sources */,
 				A1170210256AAB38002DFB85 /* AppDelegate.swift in Sources */,
