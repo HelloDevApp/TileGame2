@@ -48,6 +48,8 @@ class GameScene: SKScene {
     var previousScaleCamera: CGFloat!
     var previousPinchValue: CGFloat!
     
+    let sheet = SpriteSheet(texture: SKTexture(imageNamed: "uni"), rows: 12, columns: 24, spacing: 1, margin: 1)
+    
     override func didMove(to view: SKView) {
         
         setupCamera()
@@ -161,10 +163,10 @@ class GameScene: SKScene {
     }
     
     func setupPlayer() {
-        player = SKSpriteNode(color: .blue, size: CGSize(width: 100, height: 100))
+        player = SKSpriteNode(texture: sheet.textureForColumn(column: 6, row: 2))
         player.position = .zero
-        player.texture = .init(image: #imageLiteral(resourceName: "Tree_Iso"))
-        addChild(player)
+        
+        tileMapGrassLevel_0?.addChild(player)
     }
     
 }
