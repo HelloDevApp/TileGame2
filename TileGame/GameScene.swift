@@ -151,6 +151,13 @@ class GameScene: SKScene {
         return CGFloat((number * .pi) / 180)
     }
     
+    func setupSpriteButton(buttonSprite: inout SKSpriteNode?, toAngle: CGFloat) {
+        buttonSprite = SKSpriteNode(imageNamed: "arrow-576725")
+        buttonSprite?.size = CGSize(width: 50, height: 50)
+        buttonSprite?.run(.rotate(toAngle: toAngle, duration: 0, shortestUnitArc: true))
+    }
+
+    
     // Setup methods
     func setupCamera() {
         let camera = SKCameraNode()
