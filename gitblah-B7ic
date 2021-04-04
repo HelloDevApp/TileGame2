@@ -1,0 +1,5 @@
+2021-04-04T10:19:34+02:00 | c6c3325af1b155b5509bfad0b5bbcd0fd89650dc | - Add isometric move to player in map - Use Anim textures to player walk - Minor changes for better lisibility of code - Remove anime when user touch ended or touch canceled - Implement update mehods
+2021-04-04T10:16:37+02:00 | f700a9f3cc4394367495128a4cb8745ecba02793 | - add setup sprite button method
+2021-04-04T10:15:10+02:00 | eac53d6d4937c7a18e4ea7ac6d490ee00b5014fd | - Create spriteSheet and get sprite
+2021-04-04T10:13:25+02:00 | 199d8cee21a4195deb02eba71af348cb0fe7f122 | - Create func to convert degrees to radians
+2021-04-02T08:36:32+02:00 | f9920f3c53244d3fcde9921c46b8283e88bb70c6 | - Creates properties (buttonsIsTapped, walkAnimsActions, buttonNode, touchNode)
