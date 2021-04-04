@@ -145,6 +145,10 @@ class GameScene: SKScene {
                              restore: true)
     }
     
+    func deg2rad(_ number: Double) -> CGFloat {
+        return CGFloat((number * .pi) / 180)
+    }
+    
     // Setup methods
     func setupCamera() {
         let camera = SKCameraNode()
